@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gathered — Support</title>
+<meta name="description" content="Help, beta sign-up, and common questions for Gathered.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='220' fill='%233A2819'/%3E%3Cg stroke='%23D8A748' stroke-width='70' stroke-linecap='round'%3E%3Cline x1='512' y1='240' x2='512' y2='784'/%3E%3Cline x1='350' y1='397' x2='674' y2='397'/%3E%3C/g%3E%3C/svg%3E">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+:root {
+  --walnut: #3A2819;
+  --walnut-soft: #443221;
+  --gold: #D8A748;
+  --gold-deep: #9A7120;
+  --cream: #F6EEE1;
+  --tan: #EADBC4;
+  --ink: #3A2819;
+  --ink-soft: #6B5643;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', -apple-system, 'Segoe UI', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background: var(--walnut);
+  color: var(--cream);
+  text-align: center;
+  padding: 44px 20px 40px;
+}
+.app-icon {
+  width: 84px;
+  height: 84px;
+  border-radius: 19px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+.app-name {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  margin: 16px 0 6px;
+  letter-spacing: 0.01em;
+}
+.app-tagline {
+  margin: 0 auto;
+  max-width: 440px;
+  color: var(--tan);
+  font-size: 0.98rem;
+}
+.tabs {
+  display: inline-flex;
+  gap: 6px;
+  margin-top: 24px;
+  background: var(--walnut-soft);
+  border-radius: 999px;
+  padding: 5px;
+}
+.tabs a {
+  color: var(--tan);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 999px;
+}
+.tabs a[aria-current="page"] { background: var(--gold); color: var(--walnut); }
+
+/* ---------- CONTENT ---------- */
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+h1 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 2.5rem);
+  line-height: 1.1;
+  margin: 0 0 6px;
+}
+h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 40px 0 10px;
+}
+p, li { font-size: 1.02rem; }
+p { margin: 0 0 14px; }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+a { color: var(--gold-deep); }
+.updated { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 28px; }
+.lede { font-size: 1.1rem; color: var(--ink-soft); }
+
+.promise {
+  background: #fff;
+  border: 1px solid var(--tan);
+  border-left: 4px solid var(--gold);
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin: 0 0 8px;
+}
+.promise p { margin: 0; font-size: 1.1rem; font-weight: 600; }
+
+.btn {
+  display: inline-block;
+  background: var(--walnut);
+  color: var(--cream);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 10px;
+  font-size: 0.98rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  margin: 4px 8px 8px 0;
+}
+.btn--gold { background: var(--gold); color: var(--walnut); }
+
+.card {
+  background: var(--walnut);
+  color: var(--cream);
+  border-radius: 14px;
+  padding: 24px;
+  margin: 8px 0 10px;
+}
+.card h2 { margin-top: 0; color: var(--cream); }
+.card p { color: var(--tan); }
+.card .btn { margin-bottom: 0; }
+
+details {
+  background: #fff;
+  border: 1px solid var(--tan);
+  border-radius: 12px;
+  margin: 10px 0;
+}
+summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-weight: 700;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after { content: '+'; color: var(--gold-deep); font-size: 1.2rem; line-height: 1.2; }
+details[open] summary::after { content: '\2212'; }
+.answer { padding: 0 20px 16px; }
+.answer p:last-child { margin-bottom: 0; }
+.verse { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.2rem; color: var(--ink-soft); }
+
+footer {
+  border-top: 1px solid var(--tan);
+  text-align: center;
+  padding: 28px 20px 40px;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+}
+footer a { color: var(--ink-soft); }
+
+/* ---------- COPYABLE EMAIL ---------- */
+.copy-email {
+  display: inline-flex;
+  align-items: stretch;
+  max-width: 100%;
+  margin: 10px 0 8px;
+  background: #fff;
+  border: 1px solid var(--tan);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+.copy-email__addr {
+  padding: 12px 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--walnut);
+  user-select: all;
+  -webkit-user-select: all;
+  overflow-wrap: normal;
+  min-width: 0;
+  align-self: center;
+}
+.copy-btn {
+  flex-shrink: 0;
+  background: var(--walnut);
+  color: var(--cream);
+  border: none;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0 18px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.copy-btn:hover { background: #4f3824; }
+@media (max-width: 560px) {
+  .copy-email__addr { font-size: 0.8rem; padding: 12px; }
+  .copy-btn { padding: 0 14px; }
+}
+.card .copy-email { border-color: transparent; }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="app-icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gathered app icon">
+    <rect width="1024" height="1024" fill="#3A2819"/>
+    <circle cx="512" cy="512" r="356" fill="#443221"/>
+    <g stroke="#D8A748" stroke-width="62" stroke-linecap="round">
+      <line x1="512" y1="256" x2="512" y2="768"/>
+      <line x1="365" y1="397" x2="659" y2="397"/>
+    </g>
+  </svg>
+  <p class="app-name">Gathered</p>
+  <p class="app-tagline">Openers, games, study notes, and prayer for church small groups, all in one place.</p>
+  <nav class="tabs" aria-label="Gathered pages">
+    <a href="index.html">Home</a>
+    <a href="support.html" aria-current="page">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Support</h1>
+  <p class="lede">Questions, bug reports, and ideas all go to one place. A real person reads every email.</p>
+  <div><div class="copy-email"><span class="copy-email__addr">developer@<wbr>americanmadegames.com</span><button type="button" class="copy-btn" data-copy="developer@americanmadegames.com">Copy</button></div></div>
+
+  <div class="card">
+    <h2>Help test the beta</h2>
+    <p>Gathered's beta on iOS is opening soon through TestFlight, Apple's free app for testing new apps. Email us with the subject <strong style="color: var(--cream)">Gathered beta</strong> and the address where you'd like your invite, and we'll send one as soon as the beta opens.</p>
+    <div class="copy-email"><span class="copy-email__addr">developer@<wbr>americanmadegames.com</span><button type="button" class="copy-btn" data-copy="developer@americanmadegames.com">Copy</button></div>
+  </div>
+
+  <h2>Reporting a bug</h2>
+  <p>It helps to include:</p>
+  <ul>
+    <li>What you were doing when it happened</li>
+    <li>Your iPhone model and iOS version</li>
+    <li>A screenshot, if you can</li>
+  </ul>
+
+  <h2>Common questions</h2>
+
+  <details>
+    <summary>When can I get Gathered?</summary>
+    <div class="answer"><p>The iOS beta opens soon through TestFlight, and Gathered will come to the App Store after that. To join the beta, see "Help test the beta" above.</p></div>
+  </details>
+  <details>
+    <summary>Who is Gathered for?</summary>
+    <div class="answer"><p>Leaders of church small groups: youth groups, young adults, Bible studies, couples, men's and women's groups, seniors, and newcomers. A leader sets up their group once, and Gathered shapes the whole meeting around it.</p></div>
+  </details>
+  <details>
+    <summary>Is it really free?</summary>
+    <div class="answer">
+      <p>Yes, free now and forever, with no ads. Gathered was made as a service to the church, the body of Christ, just as salvation is a free gift.</p>
+      <p class="verse">"For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God." Ephesians 2:8 (BSB)</p>
+    </div>
+  </details>
+  <details>
+    <summary>Does everyone in the group need the app?</summary>
+    <div class="answer"><p>No. Gathered is made for the leader's phone. The games run on one phone, so the group can play together without downloading anything.</p></div>
+  </details>
+  <details>
+    <summary>Does it need an internet connection?</summary>
+    <div class="answer"><p>No. Gathered works offline and never connects to a server.</p></div>
+  </details>
+  <details>
+    <summary>Who can see our prayer requests?</summary>
+    <div class="answer"><p>Only the leader, on their own phone. Private requests stay private. A list of shared requests leaves the phone only when the leader copies it and chooses to send it to the group.</p></div>
+  </details>
+  <details>
+    <summary>What if our group skips a week or takes a break?</summary>
+    <div class="answer"><p>Gathered knows when your group meets, counts meetings, and handles skipped weeks and breaks.</p></div>
+  </details>
+  <details>
+    <summary>Will the timer interrupt a good conversation?</summary>
+    <div class="answer"><p>No. The timer for the opener and study vibrates quietly instead of chiming, so it keeps you on track without cutting anyone off.</p></div>
+  </details>
+  <details>
+    <summary>What happens if I delete the app or get a new phone?</summary>
+    <div class="answer"><p>Everything in Gathered lives only on your phone and is never sent to us, so we have no copy and can't restore it for you.</p></div>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>Gathered collects no data. Read the full <a href="privacy.html">privacy policy</a>.</p>
+</main>
+
+<footer>
+  Gathered is made by American Made Games.<br>
+  developer@americanmadegames.com
+</footer>
+
+
+<script>
+  // Copy-to-clipboard for email addresses
+  document.querySelectorAll('.copy-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      function done(ok) {
+        btn.textContent = ok ? 'Copied!' : 'Select & copy';
+        if (!ok) {
+          var addr = btn.parentNode.querySelector('.copy-email__addr');
+          var r = document.createRange(); r.selectNodeContents(addr);
+          var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        }
+        setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+      }
+      function fallback() {
+        try {
+          var t = document.createElement('textarea');
+          t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+          document.body.appendChild(t); t.select();
+          var ok = document.execCommand('copy');
+          document.body.removeChild(t); done(ok);
+        } catch (e) { done(false); }
+      }
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+      } else { fallback(); }
+    });
+  });
+</script>
+
+</body>
+</html>
