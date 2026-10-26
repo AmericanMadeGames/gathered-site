@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gathered — Support</title>
-<meta name="description" content="Help, beta sign-up, and common questions for Gathered.">
+<meta name="description" content="Help, the iOS beta, and common questions for Gathered.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='220' fill='%233A2819'/%3E%3Cg stroke='%23D8A748' stroke-width='70' stroke-linecap='round'%3E%3Cline x1='512' y1='240' x2='512' y2='784'/%3E%3Cline x1='350' y1='397' x2='674' y2='397'/%3E%3C/g%3E%3C/svg%3E">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap');
@@ -212,6 +212,10 @@ footer a { color: var(--ink-soft); }
   .copy-btn { padding: 0 14px; }
 }
 .card .copy-email { border-color: transparent; }
+
+.card .beta-steps { color: var(--tan); margin: 0 0 18px; padding-left: 22px; }
+.card .beta-steps li { color: var(--tan); }
+.card .card-note { margin: 18px 0 0; font-size: 0.95rem; }
 </style>
 </head>
 <body>
@@ -239,9 +243,16 @@ footer a { color: var(--ink-soft); }
   <p class="lede">Questions, bug reports, and ideas all go to one place. A real person reads every email.</p>
   <div><div class="copy-email"><span class="copy-email__addr">developer@<wbr>americanmadegames.com</span><button type="button" class="copy-btn" data-copy="developer@americanmadegames.com">Copy</button></div></div>
 
-  <div class="card">
-    <h2>Help test the beta</h2>
-    <p>Gathered's beta on iOS is opening soon through TestFlight, Apple's free app for testing new apps. Email us with the subject <strong style="color: var(--cream)">Gathered beta</strong> and the address where you'd like your invite, and we'll send one as soon as the beta opens.</p>
+  <div class="card" id="beta">
+    <h2>Join the beta</h2>
+    <p>Gathered's iOS beta is open now through TestFlight, Apple's free app for testing new apps.</p>
+    <ol class="beta-steps">
+      <li>On your iPhone, tap the button below.</li>
+      <li>If asked, install TestFlight from the App Store.</li>
+      <li>Tap Accept, then Install, to get Gathered.</li>
+    </ol>
+    <a class="btn btn--gold" href="https://testflight.apple.com/join/HFZzsk5j" target="_blank" rel="noopener">Join the beta on TestFlight</a>
+    <p class="card-note">Found a bug or have an idea? Send feedback right from the TestFlight app, or email us:</p>
     <div class="copy-email"><span class="copy-email__addr">developer@<wbr>americanmadegames.com</span><button type="button" class="copy-btn" data-copy="developer@americanmadegames.com">Copy</button></div>
   </div>
 
@@ -257,7 +268,7 @@ footer a { color: var(--ink-soft); }
 
   <details>
     <summary>When can I get Gathered?</summary>
-    <div class="answer"><p>The iOS beta opens soon through TestFlight, and Gathered will come to the App Store after that. To join the beta, see "Help test the beta" above.</p></div>
+    <div class="answer"><p>The iOS beta is open now. <a href="https://testflight.apple.com/join/HFZzsk5j" target="_blank" rel="noopener">Join it on TestFlight</a>, or see "Join the beta" above for the steps. Gathered will come to the App Store after testing.</p></div>
   </details>
   <details>
     <summary>Who is Gathered for?</summary>

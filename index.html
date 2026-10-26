@@ -301,6 +301,10 @@ header .tabs { display: flex; width: max-content; margin: 18px auto 0; }
   .step { padding: 18px; gap: 12px; }
   .intro { font-size: 1.1rem; }
 }
+
+.card .beta-steps { color: var(--tan); margin: 0 0 18px; padding-left: 22px; }
+.card .beta-steps li { color: var(--tan); }
+.card .card-note { margin: 18px 0 0; font-size: 0.95rem; }
 </style>
 </head>
 <body>
@@ -316,7 +320,7 @@ header .tabs { display: flex; width: max-content; margin: 18px auto 0; }
   </svg>
   <p class="app-name">Gathered</p>
   <p class="app-tagline">Openers, games, study notes, and prayer for church small groups, all in one place.</p>
-  <p class="status-badge">iOS beta coming soon · <a href="#beta">Help test it</a></p>
+  <p class="status-badge">iOS beta now open · <a href="https://testflight.apple.com/join/HFZzsk5j" target="_blank" rel="noopener">Join on TestFlight</a></p>
   <nav class="tabs" aria-label="Gathered pages">
     <a href="index.html" aria-current="page">Home</a>
     <a href="support.html">Support</a>
@@ -393,8 +397,15 @@ header .tabs { display: flex; width: max-content; margin: 18px auto 0; }
   <p>Gathered does not collect any data, now or ever. Your groups, study notes, and prayer requests stay on your phone. There are no accounts, no ads, no analytics, and no tracking, and Gathered never connects to a server. Read the full <a href="privacy.html">privacy policy</a>.</p>
 
   <div class="card" id="beta">
-    <h2>Help test the beta</h2>
-    <p>Gathered's beta on iOS is opening soon through TestFlight, Apple's free app for testing new apps. Email us with the subject <strong style="color: var(--cream)">Gathered beta</strong> and the address where you'd like your invite, and we'll send one as soon as the beta opens.</p>
+    <h2>Join the beta</h2>
+    <p>Gathered's iOS beta is open now through TestFlight, Apple's free app for testing new apps.</p>
+    <ol class="beta-steps">
+      <li>On your iPhone, tap the button below.</li>
+      <li>If asked, install TestFlight from the App Store.</li>
+      <li>Tap Accept, then Install, to get Gathered.</li>
+    </ol>
+    <a class="btn btn--gold" href="https://testflight.apple.com/join/HFZzsk5j" target="_blank" rel="noopener">Join the beta on TestFlight</a>
+    <p class="card-note">Found a bug or have an idea? Send feedback right from the TestFlight app, or email us:</p>
     <div class="copy-email"><span class="copy-email__addr">developer@<wbr>americanmadegames.com</span><button type="button" class="copy-btn" data-copy="developer@americanmadegames.com">Copy</button></div>
   </div>
 
